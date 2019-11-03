@@ -1,6 +1,7 @@
 package main
 
 //https://github.com/375187588/GoObject
+//study 86
 
 import (
 	"gorobot/engine"
@@ -26,7 +27,9 @@ func main() {
 	}
 
 	e.Run(engine.Request{
-		GUrl:       "http://www.zhenai.com/zhenghun",
-		ParserFunc: parser.ParseCityList,
+		GUrl: "http://www.zhenai.com/zhenghun",
+		Parser: engine.NewFuncParser(
+			parser.ParseCityList,
+			"ParseCityList"),
 	})
 }

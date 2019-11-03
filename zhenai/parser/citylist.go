@@ -18,8 +18,9 @@ func ParseCityList(
 	for _, m := range matches {
 		result.Requests = append(
 			result.Requests, engine.Request{
-				GUrl:       string(m[1]),
-				ParserFunc: ParseCity,
+				GUrl:   string(m[1]),
+				Parser: engine.NewFuncParser(
+					ParseCity, "ParseCity"),
 			})
 	}
 
