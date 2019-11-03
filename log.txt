@@ -1,0 +1,67 @@
+Administrator@BVDYD1U6OVRBO3I MINGW64 /e/GoWork/GoObject/src/gorobot (master)
+$ git add -A
+
+Administrator@BVDYD1U6OVRBO3I MINGW64 /e/GoWork/GoObject/src/gorobot (master)
+$ git commit -m 'sort:sort.txt'
+[master 0da4870] sort:sort.txt
+ 1 file changed, 7 insertions(+)
+ create mode 100644 sort.txt
+
+Administrator@BVDYD1U6OVRBO3I MINGW64 /e/GoWork/GoObject/src/gorobot (master)
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 407 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/375187588/GoObject.git
+   51b9055..0da4870  master -> master
+Branch master set up to track remote branch master from origin.
+
+Administrator@BVDYD1U6OVRBO3I MINGW64 /e/GoWork/GoObject/src/gorobot (master)
+$ git add -A
+
+Administrator@BVDYD1U6OVRBO3I MINGW64 /e/GoWork/GoObject/src/gorobot (master)
+$ git commit -m 'commit:分步式网络爬虫'
+[master f734c53] commit:分步式网络爬虫
+ 14 files changed, 249 insertions(+), 15 deletions(-)
+ create mode 100644 distributed/config/config.go
+ create mode 100644 distributed/main.exe
+ create mode 100644 distributed/main.go
+ create mode 100644 distributed/persist/client/ItemServer.go
+ create mode 100644 distributed/persist/rpc.go
+ create mode 100644 distributed/persist/server/client_test.go
+ create mode 100644 distributed/persist/server/main.go
+ create mode 100644 distributed/rpcsupport/rpc.go
+ create mode 100644 rpc/client/client.exe
+ create mode 100644 rpc/server/server.exe
+ create mode 100644 rpcr.txt
+
+Administrator@BVDYD1U6OVRBO3I MINGW64 /e/GoWork/GoObject/src/gorobot (master)
+$ git push -u origin master
+Counting objects: 28, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (23/23), done.
+Writing objects: 100% (28/28), 12.98 MiB | 190.00 KiB/s, done.
+Total 28 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/375187588/GoObject.git
+   0da4870..f734c53  master -> master
+Branch master set up to track remote branch master from origin.
+
+Administrator@BVDYD1U6OVRBO3I MINGW64 /e/GoWork/GoObject/src/gorobot (master)
+$ git tag -a v0.0.1.1 -m 'v0.0.1.1'
+
+Administrator@BVDYD1U6OVRBO3I MINGW64 /e/GoWork/GoObject/src/gorobot (master)
+$ git push --tag
+Fatal: TaskCanceledException encountered.
+Username for 'https://github.com': 375187588@qq.com
+Counting objects: 1, done.
+Writing objects: 100% (1/1), 154 bytes | 0 bytes/s, done.
+Total 1 (delta 0), reused 0 (delta 0)
+To https://github.com/375187588/GoObject.git
+ * [new tag]         v0.0.1.1 -> v0.0.1.1
+
+Administrator@BVDYD1U6OVRBO3I MINGW64 /e/GoWork/GoObject/src/gorobot (master)
+$
