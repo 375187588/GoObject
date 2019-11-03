@@ -1,0 +1,7 @@
+git remote add origin https://github.com/375187588/GoObject.git
+git init
+git add README.md
+git commit -m "study go"
+git add -A
+git commit -m 'commit:github.txt'
+git push -u origin master
