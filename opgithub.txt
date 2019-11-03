@@ -232,3 +232,24 @@ To https://github.com/375187588/GoObject.git
 
 Administrator@BVDYD1U6OVRBO3I MINGW64 /e/GoWork/GoObject/src/gorobot (master)
 $
+
+
+Administrator@BVDYD1U6OVRBO3I MINGW64 /e/GoWork/GoObject/src/gorobot (master)
+$ git commit -m 'commit:opgithub.txt'
+[master 87b2d1f] commit:opgithub.txt
+ 2 files changed, 236 insertions(+)
+ create mode 100644 opgithub.txt
+
+Administrator@BVDYD1U6OVRBO3I MINGW64 /e/GoWork/GoObject/src/gorobot (master)
+$ git push -u origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 2.93 KiB | 0 bytes/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/375187588/GoObject.git
+   d0753a0..87b2d1f  master -> master
+Branch master set up to track remote branch master from origin.
+
+Administrator@BVDYD1U6OVRBO3I MINGW64 /e/GoWork/GoObject/src/gorobot (master)
