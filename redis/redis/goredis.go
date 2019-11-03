@@ -28,7 +28,7 @@ func main() {
 }
 
 // 创建 redis 客户端
-func createClient() *redis.Client {
+func reateClient() *redis.Client {
 	client := redis.NewClient(&redis.Options{
 		Addr:     "localhost:6379",
 		Password: "",

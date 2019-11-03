@@ -1,0 +1,3 @@
+{"method":"abc.def"}
+{"method":"DemoService.Div","params":[{"A":3,"B":4}],"id":1}
+{"method":"DemoService.Div","params":[{"A":3,"B":0}],"id":1234}

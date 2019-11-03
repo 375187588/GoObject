@@ -45,7 +45,7 @@ func ItemSaver(index string) (chan engine.Item, error) {
 		for {
 			item := <-out
 
-			err = save(itemCount, item, rdb)
+			err = Save(itemCount, item, rdb)
 			if err == nil {
 				//log.Printf("Item saver:got item "+"#%d: %v", itemCount, item)
 				itemCount++
@@ -56,7 +56,8 @@ func ItemSaver(index string) (chan engine.Item, error) {
 	return out, nil
 }
 
-func save(index int64, item engine.Item, rdb *redis.Client) error {
+// Save(index )
+func Save(index int64, item engine.Item, rdb *redis.Client) error {
 	data, err := json.Marshal(item)
 	if err != nil {
 		fmt.Println("json marshal fail")
