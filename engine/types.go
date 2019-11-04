@@ -1,5 +1,7 @@
 package engine
 
+import "gorobot/distributed/config"
+
 type Item struct {
 	URL     string
 	Type    string
@@ -35,7 +37,7 @@ func (NilParser) Parse(_ []byte, _ string) ParseResult {
 }
 
 func (NilParser) Serialize() (name string, args interface{}) {
-	return "NilParser", nil
+	return config.NilParser, nil
 }
 
 type FuncParser struct {

@@ -2,6 +2,7 @@ package parser
 
 import (
 	"fmt"
+	"gorobot/distributed/config"
 	"gorobot/engine"
 	"regexp"
 )
@@ -26,7 +27,7 @@ func ParseCity(
 	for _, m := range matches {
 		result.Requests = append(result.Requests, engine.Request{
 			GUrl:   string(m[1]),
-			Parser: engine.NewFuncParser(ParseCity, "ParseCity"),
+			Parser: engine.NewFuncParser(ParseCity, config.ParseCity),
 		})
 	}
 

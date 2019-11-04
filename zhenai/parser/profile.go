@@ -1,6 +1,7 @@
 package parser
 
 import (
+	"gorobot/distributed/config"
 	"gorobot/engine"
 	"gorobot/module"
 	"gorobot/util"
@@ -156,7 +157,7 @@ func (p *ProfileParser) Parse(
 }
 
 func (p *ProfileParser) Serialize() (name string, args interface{}) {
-	return "ProfileParser", p.userName
+	return config.ParseProfile, p.userName
 }
 
 func NewProfileParser(id string, name string) *ProfileParser {

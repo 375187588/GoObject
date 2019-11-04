@@ -1,9 +1,9 @@
 package parser
 
 import (
-	"regexp"
-
+	"gorobot/distributed/config"
 	"gorobot/engine"
+	"regexp"
 )
 
 const cityListRe = `(http://www.zhenai.com/zhenghun/[0-9a-z]+)"[^>]*>([^<]+)</a>`
@@ -18,9 +18,9 @@ func ParseCityList(
 	for _, m := range matches {
 		result.Requests = append(
 			result.Requests, engine.Request{
-				GUrl:   string(m[1]),
+				GUrl: string(m[1]),
 				Parser: engine.NewFuncParser(
-					ParseCity, "ParseCity"),
+					ParseCity, config.ParseCityList),
 			})
 	}
 
